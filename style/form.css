@@ -109,8 +109,9 @@ input:placeholder-shown+.upper-form-placeholder {
 
     margin-bottom: 20px;
     font-size: 12px;
+    font-weight: bold;
     color: #777;
-    color: #FFF;
+    color: #000;
 }
 
 
@@ -182,7 +183,7 @@ input[type="radio"] {
 }
 
 .white {
-    --primary: hsla(0, 100%, 100%, 0.8);
+    --primary: rgba(63, 63, 60, 1);
     /* hsl(250, 100%, 44%); */
     --other: hsl(0, 0%, 14%);
 }
@@ -402,8 +403,8 @@ CORE STYLES
 }
 
 .toggle:hover {
-    color: #FFF;
-    --uiToggleColor: var(--toggleColor, #FFF);
+    color: #333;
+    --uiToggleColor: var(--toggleColor, #333);
 }
 
 .toggle__input {
