@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/form.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <main class="card">
+            <form id="survey-form">
+                <section class="form-content col-1">
+                    <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " />
+                    <label class="upper-form-placeholder">Name</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </section>
+                <section class="form-content col-1">
+                    <input name="email" id="email" class="effect-8 upper-form" type="email" placeholder=" " required />
+                    <label class="upper-form-placeholder">Email</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </section>
+                <hr class="col-1">
+                <section class="form-content col-2">
+                    <input type="number" name="age" id="age" min="10" max="99" placeholder=" "
+                        class="effect-8 upper-form" />
+                    <label class="upper-form-placeholder">Age</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </section>
+                <h4 class="col-1">Which Sector Your Interested to Invest?</h4>
+                <section class="form-content select-wrap sector-field col-2">
+                    <label>Stock Sector</label>
+                    <select class="effect-2 upper-form sector">
+                        <option value="upper-form-placeholder" disabled selected></option>
+                        <option>Materials</option>
+                        <option>Industrials</option>
+                        <option>Financials</option>
+                        <option>Energy</option>
+                        <option>Consumer discretionary</option>
+                        <option>Information technology</option>
+                        <option>Communication services</option>
+                        <option>Real estate</option>
+                        <option>Health care</option>
+                        <option>Consumer staples</option>
+                        <option>Utilities</option>
+                    </select>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </section>
+                <h4 class="col-1">What's Your Current Market Confidence?</h4>
+                <section class="form-content col-3 white">
+                    <label class="confidence-label">
+                        <input type="radio" name="white" />
+                        <span class="radio-style"></span>
+                        <span class="radio-label">Confident</span>
+                    </label>
+                    <label class="confidence-label">
+                        <input type="radio" name="white" />
+                        <span class="radio-style"></span>
+                        <span class="radio-label">Somewhat Confident</span>
+                    </label>
+                    <label class="confidence-label">
+                        <input type="radio" name="white" />
+                        <span class="radio-style"></span>
+                        <span class="radio-label">Not Confident</span>
+                    </label>
+                </section>
+                <h4 class="col-1">Do You Feel Investing in Stocks Risky?</h4>
+                <section class="form-content col-3 white">
+                    <label class="confidence-label">
+                        <input type="radio" name="white" />
+                        <span class="radio-style"></span>
+                        <span class="radio-label">Yes</span>
+                    </label>
+                    <label class="confidence-label">
+                        <input type="radio" name="white" />
+                        <span class="radio-style"></span>
+                        <span class="radio-label">No</span>
+                    </label>
+                    <label class="confidence-label">
+                        <input type="radio" name="white" />
+                        <span class="radio-style"></span>
+                        <span class="radio-label">Varies on the Situation</span>
+                    </label>
+                </section>
+                <h4 class="col-1">Which Region You Originally and Currently Reside?</h4>
+                <section class="form-content col-1">
+
+                    <label class="toggle">
+                        <input id="americas" name="americas" value="Americas" type="checkbox" class="toggle__input">
+                        <span class="toggle__label">
+                            <span class="toggle__text">Americas (North America, South America, Central America,
+                                Caribbean)</span>
+                        </span>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="toggle">
+                        <input id="asia" name="asia" value="Asia" type="checkbox" class="toggle__input">
+                        <span class="toggle__label">
+                            <span class="toggle__text">Asia Pacific (Central & South Asia, Northeastern Asia,
+                                Southeastern Asia,
+                                Australia and Oceania)</span>
+                        </span>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="toggle">
+                        <input id="europe" name="europe" value="Europe" type="checkbox" class="toggle__input">
+                        <span class="toggle__label">
+                            <span class="toggle__text">Europe (Northern Europe, Southern Europe, Eastern Europe, Western
+                                Europe)</span>
+                        </span>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="toggle">
+                        <input id="mea" name="mea" value="MiddleEastAfrica" type="checkbox" class="toggle__input">
+                        <span class="toggle__label">
+                            <span class="toggle__text">Middle East/Africa (Middle East, Northern Africa, Southern
+                                Africa)</span>
+                        </span>
+                    </label>
+
+                </section>
+            </form>
+        </main>
+    </div>
+
+
+
+
+
+    <script src="" async defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
