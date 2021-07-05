@@ -1,5 +1,5 @@
 :root {
-    background-image: url(./assets/oculus_nyc.png);
+    background-image: url("https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png");
 
     background-repeat: no-repeat;
     background-attachment: fixed;
