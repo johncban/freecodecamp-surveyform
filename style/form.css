@@ -15,12 +15,10 @@ body::before {
     width: 100%;
     z-index: -1;
 
-    background-image: linear-gradient(
-      156deg,
-      rgba(52, 52, 52, 0.8),
-      rgba(134, 134, 134, 0.7),
-      rgba(199, 199, 199, 0.8) 
-    ), url(https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png);
+    background-image: linear-gradient(156deg,
+            rgba(52, 52, 52, 0.8),
+            rgba(134, 134, 134, 0.7),
+            rgba(199, 199, 199, 0.8)), url(https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,6 +86,7 @@ form {
     width: auto;
     margin: 20px 10%;
 }
+
 /* =========================== */
 
 
@@ -114,7 +113,7 @@ input:placeholder-shown+.upper-form-placeholder {
 .upper-form:focus+.upper-form-placeholder {
     position: absolute;
     transition: all 200ms;
-    left: 3px;  
+    left: 3px;
     margin-top: -20px;
 
     margin-bottom: 20px;
@@ -123,6 +122,7 @@ input:placeholder-shown+.upper-form-placeholder {
     color: #FFF;
     color: #162046;
 }
+
 /* ============================== */
 
 
@@ -157,6 +157,7 @@ textarea:placeholder-shown+.lower-form-placeholder {
     color: #FFF;
     color: #162046;
 }
+
 /* ============================== */
 
 
@@ -213,6 +214,7 @@ input[type="radio"] {
     opacity: 0;
     position: absolute;
 }
+
 /* ============================== */
 
 
@@ -635,4 +637,33 @@ DEMO
     margin-top: 1.25rem;
     margin-right: 1.5rem;
     font-size: var(--pageToggleTextFontSize);
+}
+
+
+
+
+.button-submit {
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: sans-serif;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    color: #FFF;
+    background: #D82C2C;
+    display: inline-block;
+    padding: 20px 65px;
+    margin: 15px 0px;
+    border: 3px solid rgba(0, 0, 0, 0.16);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+.button-submit:hover {
+    background: #9E1919;
 }
