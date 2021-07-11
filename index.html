@@ -18,15 +18,15 @@
     <div class="container">
             <form id="survey-form">
                 <section class="form-content col-1">
-                    <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " />
-                    <label class="upper-form-placeholder">Name</label>
+                    <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " required/>
+                    <label id="name-label" class="upper-form-placeholder">Name</label>
                     <span class="focus-border">
                         <i></i>
                     </span>
                 </section>
                 <section class="form-content col-1">
                     <input name="email" id="email" class="effect-8 upper-form" type="email" placeholder=" " required />
-                    <label class="upper-form-placeholder">Email</label>
+                    <label  id="email-label" class="upper-form-placeholder">Email</label>
                     <span class="focus-border">
                         <i></i>
                     </span>
@@ -35,15 +35,15 @@
                 <section class="form-content col-2">
                     <input type="number" name="age" id="number" min="10" max="99" placeholder=" "
                         class="effect-8 upper-form" />
-                    <label class="upper-form-placeholder">Age</label>
+                    <label  id="number-label" class="upper-form-placeholder">Age</label>
                     <span class="focus-border">
                         <i></i>
                     </span>
                 </section>
                 <h4 class="col-1">Which Sector Your Interested to Invest?</h4>
                 <section class="form-content select-wrap sector-field col-2">
-                    <label>Stock Sector</label>
-                    <select class="effect-2 upper-form sector">
+                    <label id="sector-label">Stock Sector</label>
+                    <select id="dropdown" class="effect-2 upper-form sector">
                         <option value="upper-form-placeholder" disabled selected></option>
                         <option>Materials</option>
                         <option>Industrials</option>
@@ -64,17 +64,17 @@
                 <h4 class="col-1">What's Your Current Market Confidence?</h4>
                 <section class="form-content col-3 white">
                     <label class="confidence-label">
-                        <input type="radio" name="marketconfidence" />
+                        <input type="radio" name="marketconfidence" value="confident"/>
                         <span class="radio-style"></span>
                         <span class="radio-label">Confident</span>
                     </label>
                     <label class="confidence-label">
-                        <input type="radio" name="marketconfidence" />
+                        <input type="radio" name="marketconfidence" value="somewhatconfident"/>
                         <span class="radio-style"></span>
                         <span class="radio-label">Somewhat Confident</span>
                     </label>
                     <label class="confidence-label">
-                        <input type="radio" name="marketconfidence" />
+                        <input type="radio" name="marketconfidence" value="notconfident"/>
                         <span class="radio-style"></span>
                         <span class="radio-label">Not Confident</span>
                     </label>
@@ -82,17 +82,17 @@
                 <h4 class="col-1">Do You Feel Investing in Stocks Risky?</h4>
                 <section class="form-content col-3 white">
                     <label class="confidence-label">
-                        <input type="radio" name="riskconfidence" />
+                        <input type="radio" name="riskconfidence" value="yes"/>
                         <span class="radio-style"></span>
                         <span class="radio-label">Yes</span>
                     </label>
                     <label class="confidence-label">
-                        <input type="radio" name="riskconfidence" />
+                        <input type="radio" name="riskconfidence" value="no"/>
                         <span class="radio-style"></span>
                         <span class="radio-label">No</span>
                     </label>
                     <label class="confidence-label">
-                        <input type="radio" name="riskconfidence" />
+                        <input type="radio" name="riskconfidence" value="varies"/>
                         <span class="radio-style"></span>
                         <span class="radio-label">Varies on the Situation</span>
                     </label>
@@ -138,7 +138,7 @@
                 <h4 class="col-1">What is your perception in the Current Matket?</h4>
                 <section class="form-content select-wrap sector-field col-2">
                     <label>Market Knowledge</label>
-                    <select class="effect-2 upper-form sector">
+                    <select id="dropdown" class="effect-2 upper-form sector">
                         <option value="upper-form-placeholder" disabled selected></option>
                         <option>Very Positive</option>
                         <option>Positive</option>
@@ -254,6 +254,19 @@
                             <span class="toggle__text">Nikkei 225 (N225)</span>
                         </span>
                     </label>
+                </section>
+                <section class="form-content col-1">
+                    <!-- <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " required/> -->
+                    <textarea
+                        id="comments"
+                        class="effect-8 lower-form"
+                        name="comments"
+                        placeholder=""
+                    ></textarea>
+                    <label id="comment-label" class="lower-form-placeholder">Comments</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
                 </section>
             </form>
     </div>
