@@ -12,263 +12,264 @@
 
 <body>
     <header>
-        <h1 id = "title">Free Code Camp Concept Survey Form</h1>
-        <p id = "description">A Concept Form for Perspective Stock Investor.</p>
+        <h1 id="title">Free Code Camp Concept Survey Form</h1>
+        <p id="description">A Concept Form for Perspective Stock Investor.</p>
     </header>
     <div class="container">
-            <form id="survey-form">
-                <section class="form-content col-1">
-                    <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " required/>
-                    <label id="name-label" class="upper-form-placeholder">Name</label>
-                    <span class="focus-border">
-                        <i></i>
+        <form id="survey-form">
+            <section class="form-content col-1">
+                <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " required />
+                <label id="name-label" class="upper-form-placeholder">Name</label>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </section>
+            <section class="form-content col-1">
+                <input name="email" id="email" class="effect-8 upper-form" type="email" placeholder=" " required />
+                <label id="email-label" class="upper-form-placeholder">Email</label>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </section>
+            <section class="form-content col-2">
+                <input type="number" name="age" id="number" min="10" max="99" placeholder=" "
+                    class="effect-8 upper-form" />
+                <label id="number-label" class="upper-form-placeholder">Age</label>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </section>
+            <hr class="col-1">
+            <h4 class="col-1">Which Sector Your Interested to Invest?</h4>
+            <section class="form-content select-wrap sector-field col-2">
+                <label id="sector-label">Stock Sector</label>
+                <select id="dropdown" class="effect-2 upper-form sector">
+                    <option value="upper-form-placeholder" disabled selected></option>
+                    <option>Materials</option>
+                    <option>Industrials</option>
+                    <option>Financials</option>
+                    <option>Energy</option>
+                    <option>Consumer discretionary</option>
+                    <option>Information technology</option>
+                    <option>Communication services</option>
+                    <option>Real estate</option>
+                    <option>Health care</option>
+                    <option>Consumer staples</option>
+                    <option>Utilities</option>
+                </select>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </section>
+            <h4 class="col-1">What's Your Current Market Confidence?</h4>
+            <section class="form-content col-3 white">
+                <label class="confidence-label">
+                    <input type="radio" name="marketconfidence" value="confident" />
+                    <span class="radio-style"></span>
+                    <span class="radio-label">Confident</span>
+                </label>
+                <label class="confidence-label">
+                    <input type="radio" name="marketconfidence" value="somewhatconfident" />
+                    <span class="radio-style"></span>
+                    <span class="radio-label">Somewhat Confident</span>
+                </label>
+                <label class="confidence-label">
+                    <input type="radio" name="marketconfidence" value="notconfident" />
+                    <span class="radio-style"></span>
+                    <span class="radio-label">Not Confident</span>
+                </label>
+            </section>
+            <h4 class="col-1">Do You Feel Investing in Stocks Risky?</h4>
+            <section class="form-content col-3 white">
+                <label class="confidence-label">
+                    <input type="radio" name="riskconfidence" value="yes" />
+                    <span class="radio-style"></span>
+                    <span class="radio-label">Yes</span>
+                </label>
+                <label class="confidence-label">
+                    <input type="radio" name="riskconfidence" value="no" />
+                    <span class="radio-style"></span>
+                    <span class="radio-label">No</span>
+                </label>
+                <label class="confidence-label">
+                    <input type="radio" name="riskconfidence" value="varies" />
+                    <span class="radio-style"></span>
+                    <span class="radio-label">Varies on the Situation</span>
+                </label>
+            </section>
+            <h4 class="col-1">Which Region You Originally and Currently Reside?</h4>
+            <section class="form-content col-1">
+                <label class="toggle">
+                    <input id="americas" name="americas" value="Americas" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Americas (North America, South America, Central America,
+                            Caribbean)</span>
                     </span>
-                </section>
-                <section class="form-content col-1">
-                    <input name="email" id="email" class="effect-8 upper-form" type="email" placeholder=" " required />
-                    <label  id="email-label" class="upper-form-placeholder">Email</label>
-                    <span class="focus-border">
-                        <i></i>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="asia" name="asia" value="Asia" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Asia Pacific (Central & South Asia, Northeastern Asia,
+                            Southeastern Asia,
+                            Australia and Oceania)</span>
                     </span>
-                </section>
-                <hr class="col-1">
-                <section class="form-content col-2">
-                    <input type="number" name="age" id="number" min="10" max="99" placeholder=" "
-                        class="effect-8 upper-form" />
-                    <label  id="number-label" class="upper-form-placeholder">Age</label>
-                    <span class="focus-border">
-                        <i></i>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="europe" name="europe" value="Europe" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Europe (Northern Europe, Southern Europe, Eastern Europe, Western
+                            Europe)</span>
                     </span>
-                </section>
-                <h4 class="col-1">Which Sector Your Interested to Invest?</h4>
-                <section class="form-content select-wrap sector-field col-2">
-                    <label id="sector-label">Stock Sector</label>
-                    <select id="dropdown" class="effect-2 upper-form sector">
-                        <option value="upper-form-placeholder" disabled selected></option>
-                        <option>Materials</option>
-                        <option>Industrials</option>
-                        <option>Financials</option>
-                        <option>Energy</option>
-                        <option>Consumer discretionary</option>
-                        <option>Information technology</option>
-                        <option>Communication services</option>
-                        <option>Real estate</option>
-                        <option>Health care</option>
-                        <option>Consumer staples</option>
-                        <option>Utilities</option>
-                    </select>
-                    <span class="focus-border">
-                        <i></i>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="mea" name="mea" value="MiddleEastAfrica" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Middle East/Africa (Middle East, Northern Africa, Southern
+                            Africa)</span>
                     </span>
-                </section>
-                <h4 class="col-1">What's Your Current Market Confidence?</h4>
-                <section class="form-content col-3 white">
-                    <label class="confidence-label">
-                        <input type="radio" name="marketconfidence" value="confident"/>
-                        <span class="radio-style"></span>
-                        <span class="radio-label">Confident</span>
-                    </label>
-                    <label class="confidence-label">
-                        <input type="radio" name="marketconfidence" value="somewhatconfident"/>
-                        <span class="radio-style"></span>
-                        <span class="radio-label">Somewhat Confident</span>
-                    </label>
-                    <label class="confidence-label">
-                        <input type="radio" name="marketconfidence" value="notconfident"/>
-                        <span class="radio-style"></span>
-                        <span class="radio-label">Not Confident</span>
-                    </label>
-                </section>
-                <h4 class="col-1">Do You Feel Investing in Stocks Risky?</h4>
-                <section class="form-content col-3 white">
-                    <label class="confidence-label">
-                        <input type="radio" name="riskconfidence" value="yes"/>
-                        <span class="radio-style"></span>
-                        <span class="radio-label">Yes</span>
-                    </label>
-                    <label class="confidence-label">
-                        <input type="radio" name="riskconfidence" value="no"/>
-                        <span class="radio-style"></span>
-                        <span class="radio-label">No</span>
-                    </label>
-                    <label class="confidence-label">
-                        <input type="radio" name="riskconfidence" value="varies"/>
-                        <span class="radio-style"></span>
-                        <span class="radio-label">Varies on the Situation</span>
-                    </label>
-                </section>
-                <h4 class="col-1">Which Region You Originally and Currently Reside?</h4>
-                <section class="form-content col-1">
-                    <label class="toggle">
-                        <input id="americas" name="americas" value="Americas" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Americas (North America, South America, Central America,
-                                Caribbean)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="asia" name="asia" value="Asia" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Asia Pacific (Central & South Asia, Northeastern Asia,
-                                Southeastern Asia,
-                                Australia and Oceania)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="europe" name="europe" value="Europe" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Europe (Northern Europe, Southern Europe, Eastern Europe, Western
-                                Europe)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="mea" name="mea" value="MiddleEastAfrica" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Middle East/Africa (Middle East, Northern Africa, Southern
-                                Africa)</span>
-                        </span>
-                    </label>
-                </section>
-                <h4 class="col-1">What is your perception in the Current Market?</h4>
-                <section class="form-content select-wrap sector-field col-2">
-                    <label>Market Knowledge</label>
-                    <select id="dropdown" class="effect-2 upper-form sector">
-                        <option value="upper-form-placeholder" disabled selected></option>
-                        <option>Very Positive</option>
-                        <option>Positive</option>
-                        <option>Neutral</option>
-                        <option>Negative/option>
-                        <option>Very Negative</option>
-                    </select>
-                    <span class="focus-border">
-                        <i></i>
+                </label>
+            </section>
+            <h4 class="col-1">What is your perception in the Current Market?</h4>
+            <section class="form-content select-wrap sector-field col-2">
+                <label>Market Knowledge</label>
+                <select id="dropdown" class="effect-2 upper-form sector">
+                    <option value="upper-form-placeholder" disabled selected></option>
+                    <option>Very Positive</option>
+                    <option>Positive</option>
+                    <option>Neutral</option>
+                    <option>Negative/option>
+                    <option>Very Negative</option>
+                </select>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </section>
+            <h4 class="col-1">Which (One or More) Market Index Your're Confident to Invest?</h4>
+            <section class="form-content col-1">
+                <label class="toggle">
+                    <input id="ndx" name="ndx" value="Nasdaq" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">NASDAQ-100 (NDX)</span>
                     </span>
-                </section>
-                <h4 class="col-1">Which (One or More) Market Index Your're Confident to Invest?</h4>
-                <section class="form-content col-1">
-                    <label class="toggle">
-                        <input id="ndx" name="ndx" value="Nasdaq" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">NASDAQ-100 (NDX)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="spx" name="spx" value="S&P500" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">S&P 500 (SPX)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="hsi" name="hsi" value="HSI" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Hang Seng Index (HSI)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="ftse" name="ftse" value="FTSE100" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">FTSE 100 (FTSE)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="dji" name="dji" value="DJI" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Dow Jones Industrial Average (DJI)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="dax" name="dax" value="DAX" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">DAX 30 (DAX)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="rut" name="rut" value="RUT" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Russell 2000</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="px1" name="px1" value="CAC" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">CAC 40 (PX1)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="sx5e" name="sx5e" value="STOXX50" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Euro STOXX 50 (SX5E)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="bvsp" name="bvsp" value="BVSP" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Bovespa Index (BVSP)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="nsei" name="nsei" value="NSEI" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">NIFTY 50 (NSEI)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="sse" name="sse" value="SHCOMP" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">SSE Composite Index – Shanghai Stock Exchange Composite Index (SHCOMP)</span>
-                        </span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="toggle">
-                        <input id="sse" name="n225" value="N225" type="checkbox" class="toggle__input">
-                        <span class="toggle__label">
-                            <span class="toggle__text">Nikkei 225 (N225)</span>
-                        </span>
-                    </label>
-                </section>
-                <section class="form-content col-1">
-                    <!-- <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " required/> -->
-                    <textarea
-                        id="comments"
-                        class="effect-8 lower-form"
-                        name="comments"
-                        placeholder=""
-                    ></textarea>
-                    <label id="comment-label" class="lower-form-placeholder">Comments</label>
-                    <span class="focus-border">
-                        <i></i>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="spx" name="spx" value="S&P500" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">S&P 500 (SPX)</span>
                     </span>
-                </section>
-            </form>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="hsi" name="hsi" value="HSI" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Hang Seng Index (HSI)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="ftse" name="ftse" value="FTSE100" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">FTSE 100 (FTSE)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="dji" name="dji" value="DJI" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Dow Jones Industrial Average (DJI)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="dax" name="dax" value="DAX" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">DAX 30 (DAX)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="rut" name="rut" value="RUT" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Russell 2000</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="px1" name="px1" value="CAC" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">CAC 40 (PX1)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="sx5e" name="sx5e" value="STOXX50" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Euro STOXX 50 (SX5E)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="bvsp" name="bvsp" value="BVSP" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Bovespa Index (BVSP)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="nsei" name="nsei" value="NSEI" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">NIFTY 50 (NSEI)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="sse" name="sse" value="SHCOMP" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">SSE Composite Index – Shanghai Stock Exchange Composite Index
+                            (SHCOMP)</span>
+                    </span>
+                </label>
+                <br>
+                <br>
+                <label class="toggle">
+                    <input id="sse" name="n225" value="N225" type="checkbox" class="toggle__input">
+                    <span class="toggle__label">
+                        <span class="toggle__text">Nikkei 225 (N225)</span>
+                    </span>
+                </label>
+            </section>
+            <section class="form-content col-1">
+                <!-- <input name="name" id="name" class="effect-8 upper-form" type="text" placeholder=" " required/> -->
+                <textarea id="comments" class="effect-8 lower-form" name="comments" placeholder=""></textarea>
+                <label id="comment-label" class="lower-form-placeholder">Comments</label>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </section>
+            <section class="form-content col-1">
+                <button type="submit" id="submit" class="button-submit">
+                    Submit
+                </button>
+            </section>
+        </form>
     </div>
 
 
