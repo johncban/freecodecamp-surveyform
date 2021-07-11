@@ -645,12 +645,13 @@ DEMO
 .button-submit {
     text-align: center;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 100%;
+    font-weight: bold;
     font-family: sans-serif;
     white-space: nowrap;
     -webkit-font-smoothing: antialiased;
     color: #FFF;
-    background: #D82C2C;
+    background-color: rgba(22, 32, 70, 0.6);
     display: inline-block;
     padding: 20px 65px;
     margin: 15px 0px;
@@ -665,5 +666,5 @@ DEMO
 }
 
 .button-submit:hover {
-    background: #9E1919;
+    background: #162046;
 }
