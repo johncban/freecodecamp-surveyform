@@ -411,6 +411,67 @@ input:active+.radio-style::after {
 }
 
 
+
+
+
+.btn-border {
+    border: none;
+    color: #ffffff;
+    outline: none;
+    position: relative;
+
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: sans-serif;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(22, 32, 70, 0.6);
+    display: inline-block;
+    padding: 12px 40px 10px;
+    margin: 15px 0px;
+    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); */
+    -webkit-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    width: 100%;
+  }
+  
+  .btn-border:before,
+  .btn-border:after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0px; /* 24px */
+  }
+  
+  .btn-border:before {
+    border-top: 2px solid #263059;
+    right: 0;
+    top: -4px;
+  }
+  
+  .btn-border:after {
+    border-bottom: 2px solid #263059;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .btn-border:hover:before,
+  .btn-border:hover:after {
+    width: 100%;
+  }
+
+
+
+
+
 /*= input focus effects css End
 =============================== */
 
@@ -641,7 +702,7 @@ DEMO
 
 
 
-
+/*
 .button-submit {
     text-align: center;
     text-decoration: none;
@@ -668,3 +729,4 @@ DEMO
 .button-submit:hover {
     background: #162046;
 }
+*/
