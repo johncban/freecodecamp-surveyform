@@ -1,3 +1,4 @@
+/* Main CSS Settings */
 :root {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,38 +16,52 @@ body::before {
     width: 100%;
     z-index: -1;
 
-    background-image: linear-gradient(156deg,
+    /*
+    background-image: linear-gradient(-45deg,
             rgba(52, 52, 52, 0.8),
-            rgba(134, 134, 134, 0.7),
-            rgba(199, 199, 199, 0.8)), url(https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png);
+            rgba(134, 134, 134, 0.2),
+            rgba(199, 199, 199, 0.4)), url(https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    */
+
+    background: linear-gradient(156deg, #f6f6ff70, #797979b4, #626364b6, #ffffff)
+        /*, url(https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png)*/
+    ;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+/* CSS Animation Background using @keyframes */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
+/* Form Layout */
 .container {
     width: 100%;
     margin: 3.125rem auto 3.125rem auto;
 }
 
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
 form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 2.5rem 0.625rem;
 }
 
@@ -57,7 +72,23 @@ form {
 }
 
 
-/*= input focus effects css
+/* Card Header Layout */
+.card-content {
+    color: rgba(22, 32, 70, 1);
+    margin: 3.125rem auto 3.125rem auto;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(22, 32, 70, 0.4);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2.5rem 0.625rem;
+}
+
+
+/* CSS Focus and (Global) Alignment
 =========================== */
 :focus {
     outline: none;
@@ -69,7 +100,6 @@ form {
     margin: 4% 10% 3%;
     position: -webkit-sticky;
     position: sticky;
-    /* DEFAULT: position: relative; */
 }
 
 .col-2 {
@@ -78,11 +108,9 @@ form {
     margin: 20px 10%;
     position: -webkit-sticky;
     position: sticky;
-    /* DEFAULT: position: relative; */
 }
 
 .col-3 {
-    /* float: center; */
     width: auto;
     margin: 20px 10%;
 }
@@ -218,12 +246,13 @@ input[type="radio"] {
 /* ============================== */
 
 
-
+/* Radio Effect Theme */
 .white {
     --primary: #FFF;
     --other: hsl(0, 0%, 14%);
 }
 
+/* Option Select Settings */
 .sector-field select {
     height: 40px;
     width: 100%;
@@ -255,7 +284,7 @@ input[type="radio"] {
     position: relative;
 }
 
-/* .design */
+/* .Radio Style Settings */
 .radio-style {
     width: 16px;
     height: 16px;
@@ -295,21 +324,20 @@ input[type="radio"] {
 }
 
 
-/* .text */
+/* .Radio Label Settings */
 .radio-label {
     color: var(--other);
-    /* font-weight: bold; */
 }
 
 
-/* checked state */
+/* Radio State */
 input:checked+.radio-style::before {
     opacity: 1;
     transform: scale(.6);
 }
 
 
-/* other states */
+/* Other Radio States */
 input:hover+.radio-style,
 input:focus+.radio-style {
     border: 1px solid var(--primary);
@@ -333,8 +361,7 @@ input:active+.radio-style::after {
 
 
 
-
-
+/* Border Effect 2 Settings */
 .effect-2~.focus-border {
     position: absolute;
     bottom: 0;
@@ -352,11 +379,11 @@ input:active+.radio-style::after {
 }
 
 
+/* Border Effect 8 Settings */
 .effect-8 {
     transition: 0.4s;
     outline: none;
 }
-
 
 .effect-8~.focus-border:before,
 .effect-8~.focus-border:after {
@@ -366,7 +393,6 @@ input:active+.radio-style::after {
     left: 0;
     width: 0;
     height: 3px;
-    /* background-color: #99999A; */
     background-color: #162046;
     transition: 0.3s;
 }
@@ -412,14 +438,14 @@ input:active+.radio-style::after {
 
 
 
-
-
+/* Button CSS Settings */
 .btn-border {
     border: none;
-    color: #ffffff;
+    /* color: #162046; */
+    color: #8D8D8D;
     outline: none;
     position: relative;
-
+    border: 1px solid #162046;
 
     text-align: center;
     text-decoration: none;
@@ -428,7 +454,7 @@ input:active+.radio-style::after {
     font-family: sans-serif;
     white-space: nowrap;
     -webkit-font-smoothing: antialiased;
-    background-color: rgba(22, 32, 70, 0.6);
+    background-color: rgba(22, 32, 70, 0.8);
     display: inline-block;
     padding: 12px 40px 10px;
     margin: 15px 0px;
@@ -439,46 +465,52 @@ input:active+.radio-style::after {
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
     width: 100%;
-  }
-  
-  .btn-border:before,
-  .btn-border:after {
+
+
+    box-shadow: 0.5rem 0.5rem rgba(46, 49, 49, .2), -0.5rem -0.5rem rgba(228, 233, 237, .8);
+}
+
+.btn-border:hover {
+    /* background: linear-gradient(-0.25turn, rgba(22,32,70,1), rgba(82,70,128,.8)); */
+    background-color: #162046;
+    color: #fff;
+    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 1), -0.5rem -0.5rem rgba(255, 255, 255, 1);
+}
+
+.btn-border:before,
+.btn-border:after {
     border: 0 solid transparent;
     transition: all 0.3s;
     content: '';
     height: 0;
     position: absolute;
-    width: 0px; /* 24px */
-  }
-  
-  .btn-border:before {
-    border-top: 2px solid #263059;
+    width: 0px;
+    /* 24px */
+}
+
+.btn-border:before {
+    border-top: 1.5px solid rgba(0, 0, 0, 0.8);
     right: 0;
     top: -4px;
-  }
-  
-  .btn-border:after {
-    border-bottom: 2px solid #263059;
+}
+
+.btn-border:after {
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.8);
     bottom: -4px;
     left: 0;
-  }
-  
-  .btn-border:hover:before,
-  .btn-border:hover:after {
+}
+
+.btn-border:hover:before,
+.btn-border:hover:after {
     width: 100%;
-  }
+}
 
 
-
-
-
-/*= input focus effects css End
-=============================== */
 
 
 /*
 =====
-CORE STYLES
+Check box style settings
 =====
 */
 
@@ -513,7 +545,6 @@ CORE STYLES
 /*
 1. Calculation of the gap for the custom checkbox
 */
-
 .toggle__label {
     display: inline-flex;
     min-height: var(--uiToggleSize);
@@ -527,7 +558,6 @@ CORE STYLES
 /*
 1. Ems helps to calculate size of the checkbox
 */
-
 .toggle__label::after {
     content: "";
     box-sizing: border-box;
@@ -592,7 +622,7 @@ The arrow size and position depends from sizes of square because I needed an arr
 }
 
 /*
-States
+Check box States
 */
 
 /* focus state */
@@ -610,15 +640,7 @@ States
     user-select: none;
 }
 
-/*
-=====
-PRESENTATION STYLES
-=====
-*/
 
-/* 
-The demo skin
-*/
 
 .toggle__label::after {
     border-radius: var(--toggleBorderRadius, 2px);
@@ -643,90 +665,17 @@ The animation of switching states
     transition: background-color .2s ease-out;
 }
 
-/*
-=====
-SETTINGS
-=====
-*/
 
-.page__custom-settings {
-    --toggleColor: #690e90;
-    --toggleOutlineColorFocus: #690e90;
-    --toggleSize: 2rem;
+
+/* Adaptive Layout Media */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }
 
-
-/*
-=====
-DEMO
-=====
-*/
-.page {
-    box-sizing: border-box;
-    max-width: 45rem;
-    padding: 2.75rem 2rem 2.5rem;
-    margin: auto;
-
-    background-color: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
-    border-radius: 2px;
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
 }
-
-.page__section {
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 700;
-}
-
-.page__section:nth-child(n+2) {
-    margin-top: 3rem;
-}
-
-.page__custom-settings {
-    --pageToggleTextFontSize: 1.25rem;
-}
-
-.page__name {
-    width: 100%;
-}
-
-.page__name::first-letter {
-    text-transform: uppercase;
-}
-
-.page__toggle {
-    margin-top: 1.25rem;
-    margin-right: 1.5rem;
-    font-size: var(--pageToggleTextFontSize);
-}
-
-
-
-/*
-.button-submit {
-    text-align: center;
-    text-decoration: none;
-    font-size: 100%;
-    font-weight: bold;
-    font-family: sans-serif;
-    white-space: nowrap;
-    -webkit-font-smoothing: antialiased;
-    color: #FFF;
-    background-color: rgba(22, 32, 70, 0.6);
-    display: inline-block;
-    padding: 20px 65px;
-    margin: 15px 0px;
-    border: 3px solid rgba(0, 0, 0, 0.16);
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    width: 100%;
-}
-
-.button-submit:hover {
-    background: #162046;
-}
-*/
