@@ -11,7 +11,7 @@
 
 ## Table of contents
 
-- [Preview Demo](https://codepen.io/johncban/full/LYxwQxX)
+- [Preview Demo](#click-preview-for-demo)
 - [File Contents](#file-contents)
 - [Features](#features)
 - [HTML Layout](#html-layout)
@@ -19,6 +19,12 @@
 - [Project KB](#contributing)
 - [Project Sources](#creators)
 - [Copyright and license](#copyright-and-license)
+
+## Click [Preview](https://codepen.io/johncban/full/LYxwQxX) For CodePen
+<p align="center">
+  <img src="https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/readme/survey-form.png" width=900 height=500>
+</p>
+
 
 
 ## File Contents
