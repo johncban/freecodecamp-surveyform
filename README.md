@@ -15,10 +15,10 @@
 - [File Contents](#file-contents)
 - [Features](#features)
 - [HTML Layout](#html-layout)
-- [CSS](#bugs-and-feature-requests)
-- [Project KB](#contributing)
-- [Project Sources](#creators)
-- [Copyright and license](#copyright-and-license)
+- [CSS](#css)
+- [Project KB](#project-knowledge-base)
+- [Project Sources](#project-sources)
+
 
 ## Click [Preview](https://codepen.io/johncban/full/LYxwQxX) For CodePen
 <p align="center">
@@ -49,33 +49,81 @@ freecodecamp-surveyform$
 
 ## HTML Layout
 
-Some text
+The HTML Layout is divided into following:
+- Head
+  * Body
+    * Header
+    * Div
+      * Form
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+  ...
+</head>
+
+<body>
+    <header class="card-content card">
+      ...
+    </header>
+    <div class="container">
+        <form id="survey-form">
+          ...
+        </form>
+    </div>
+    <script src="" async defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"><script>
+</body>
+
+</html>
+
+```
+  
 
 
-## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
 
-## Contributing
+## CSS
+The Survey Form's Document Font is Arial for the whole project.
+```
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+```
+The Survey Form's ```body element``` have a unique background that use gradient animation infinite easing.
+```
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(
+156deg, #f6f6ff70, #797979b4, #626364b6, #ffffff) /*, url(https://raw.githubusercontent.com/johncban/freecodecamp-surveyform/main/assets/oculus_nyc.png)*/;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+```
 
-Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+## Project Knowledge Base
 
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
+### [:root](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)
+- The HTML's DOM CSS element that have higher specificity or more relevant to the Form's CSS.
+### [::before(:before)](https://developer.mozilla.org/en-US/docs/Web/CSS/::before)
+- A CSS Pseudo Element that selected first for cosmetic use of the element. In this project, it's use in the ```body element``` for the background.
+### [linear-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient())
+- A CSS function that provide image or color transition between two or more colors. In this project, the ```body element``` use the said function as its ```background``` with [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
 
-Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
-## Creators
+## Project Sources
 
-**Creator 1**
+**CSS Input Border Animation**
 
-- <https://github.com/usernamecreator1>
+- <https://codeconvey.com/css-input-border-animation/>
 
-## Thanks
-
-Some Text
-
-## Copyright and license
-
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
-
-Enjoy :metal:
+**Inclusively Hiding & Styling Checkboxes and Radio Buttons**
+- <https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/>
